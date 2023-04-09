@@ -5,7 +5,7 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Read the input image
 img = cv2.imread(
-    r'test_img.jpeg')
+    r"test_img.jpeg")
 
 # Convert into grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -19,4 +19,5 @@ for (x, y, w, h) in faces:
 
 # Display the output
 cv2.imshow('img', img)
-cv2.waitKey()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
